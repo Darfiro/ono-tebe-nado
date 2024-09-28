@@ -40,10 +40,6 @@
     font-size: 18px;
 }
 
-.header__address {
-    padding: 0 60px 10px 0;
-}
-
 .overlay {
     content: "";
     display: block;
