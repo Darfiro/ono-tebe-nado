@@ -31,13 +31,17 @@
 }
 
 .address {
-    padding: 5px 60px 10px 0;
+    padding-top: 5px;
     display: flex;
     flex-direction: column;
     gap: 5px;
     grid-column: -1;
     font-style: normal;
     font-size: 18px;
+}
+
+.header__address {
+    padding: 0 60px 10px 0;
 }
 
 .overlay::before {
@@ -54,7 +58,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
-    height: 757px;
+    min-height: 757px;
 }
 
 .cover__title {
@@ -108,11 +112,12 @@
 .bet-button {
     width: 256px;
     height: 51px;
+    font-family: Raleway, sans-serif;
     font-size: 22px;
     text-transform: uppercase;
     color: #fff;
     background-color: transparent;
-    border: #fff solid 1px;
+    border: currentColor solid 1px;
 }
 
 .lots {
@@ -186,9 +191,8 @@
 }
 
 .lots__look-more-link {
-    position: relative;
-    top: 30px;
-    left: 40px;
+    display: block;
+    padding: 30px 40px;
 }
 
 .about {
@@ -203,21 +207,18 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: center;
-    gap: 72px;
+    justify-content: start;
     padding-right: 24px;
 }
 
 .about__logo {
     width: 240px;
     height: 240px;
+    margin-left: 47px;
     clip-path: circle();
     background-color: black;
     display: flex;
     justify-content: center;
-    position: absolute;
-    top: 60px;
-    left: 47px;
 }
 
 .about__logo-image {
@@ -227,27 +228,28 @@
 }
 
 .about__title {
-    padding: 160px 5px 0px;
+    padding: 100px 10px 0;
     font-size: 40px;
     font-weight: 700;
     text-transform: uppercase;
 }
 
 .about__text {
-    padding: 30px 5px 0 10px;
+    padding: 100px 10px 0 5px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
 .footer {
-    margin: 180px 50px;
+    margin: 180px 50px 0;
     display: flex;
     align-items: start;
     justify-content: space-between;
 }
 
 .footer__menu-list {
+    padding: 5px 0 0 35px;
     list-style: none;
     text-decoration: none;
     text-align: center;
